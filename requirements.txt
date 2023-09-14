@@ -1,2 +1,2 @@
-pyside6
-requests
+PyQt5
+requests~=2.28.2
