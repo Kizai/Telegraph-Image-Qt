@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QVBoxLayout, QLabel, QPlainTextEdit, QComboBox, \
-	QSystemTrayIcon, QMenu, QAction, QFileDialog, QMessageBox, QInputDialog
-from PyQt5.QtGui import QPixmap, QImage, QClipboard, QIcon, QPixmap, QMovie
-from PyQt5.QtCore import Qt, QByteArray, QBuffer, QTimer
+from PySide6.QtWidgets import QApplication, QWidget, QPushButton, QVBoxLayout, QLabel, QPlainTextEdit, QComboBox, \
+	QSystemTrayIcon, QMenu, QFileDialog, QMessageBox, QInputDialog
+from PySide6.QtGui import QPixmap, QImage, QClipboard, QIcon, QPixmap, QMovie, QAction
+from PySide6.QtCore import Qt, QByteArray, QBuffer, QTimer
 import re
 import os
 import requests
@@ -281,7 +281,6 @@ class ImageUploader(QWidget):
 
 if __name__ == "__main__":
 	app = QApplication([])
-	app.setAttribute(Qt.AA_UseHighDpiPixmaps)
 	uploader = ImageUploader()
 	uploader.show()
-	sys.exit(app.exec_())
+	sys.exit(app.exec())

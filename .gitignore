@@ -1,1 +1,5 @@
 /settings.db
+/image_uploader.log
+/dist
+/build
+/*.txt

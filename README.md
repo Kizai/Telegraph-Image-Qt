@@ -4,7 +4,7 @@
 ![](icon/logo.png)
 
 ### 简介
-- 本项目是基于[Telegraph-Image](https://github.com/cf-pages/Telegraph-Image)部署到CloudFar后二次开发的一个QT客户端。
+- 本项目是基于[Telegraph-Image](https://github.com/cf-pages/Telegraph-Image)部署到[Cloundflare](https://dash.cloudflare.com/)后二次开发的一个QT客户端。
 - 主要是想方便上传图片到Telegraph，并粘贴链接到剪贴板中，方便写笔记。
 
 ### 环境支持
@@ -35,6 +35,10 @@ pip install PyQt5 requests
 
 注意：
 首次运行时需要设置API URL，以便程序向其发送图片上传请求。此URL保存在本地sqlite数据库中，供后续使用。
+
+API URL格式要求:
+- 正确例子：https://telegraph-image-6666.page.dev
+- 错误例子：https://telegraph-image-6666.page.dev/  (请不要在最后加上`/`)
 
 ### 功能
 1. 选择并上传图片文件(.png/.jpg/.gif/.jpeg)。
